@@ -1,0 +1,47 @@
+html,
+body{
+    height: 100vh;
+    background-image: url('../../../assets/images/alfons-morales-YLSwjSy7stw-unsplash.jpg');
+}
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cadetblue;
+}
+
+.form-class{
+    padding-top: 20px;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 50px;
+}
+
+.login-form{
+    width: 380px;
+    height: 450px;
+    margin: 20px;
+    background-color: blanchedalmond;
+    border-radius: 10px !important;
+}
+.card-title{
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.btn{
+    width: 100%;
+    margin-top:30px;
+     
+     padding:10px;
+     background-color: rgb(141, 137, 180);
+     border-radius: 10px;
+     text-decoration:none;
+     color:white;
+     background-color: cadetblue;
+     font-weight: 600;
+     display:block;
+   
+}

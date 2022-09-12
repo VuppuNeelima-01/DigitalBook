@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="global-container">
+        <div class="card login-form">
+            <div class="card-body">
+                <h1 class="card-title text-center">Signup</h1>
+                <div class="card-text">
+                    <form class="form-class" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="nameaddress" style="font-weight:500;">Enter Name</label>
+                            <input type="text" class="form-control form-control-sm" formControlName="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailaddress" style="font-weight:500;"> Enter Email</label>
+                            <input type="email" class="form-control form-control-sm" formControlName="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordaddress" style="font-weight:500;" >Enter Password</label>
+                            <input type="password" class="form-control form-control-sm" formControlName="password">
+                        </div>
+                      <button type="submit" class="btn  btn-lg" >Signup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="global-container">
+        <div class="card login-form">
+            <div class="card-body">
+                <h1 class="card-title text-center" style="color: cadetblue; font-weight: 500;">LOGIN</h1>
+                <div class="card-text">
+                    <form  [formGroup]="signInForm" class="form-class" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="emailaddress" style="font-weight: 500;"> Email</label>
+                            <input type="email" class="form-control form-control-sm" formControlName="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordaddress" style="font-weight: 500;">Password</label>
+                            <input type="password"  class="form-control form-control-sm" formControlName="password">
+                            <a href="#" style="float: right;font-size: 12px; color: #0db8de; font-weight: 500; color: cadetblue;">Forget Password ?</a>
+                        </div>
+                      <button type="submit" class="btn  btn-lg"  routerLink="/addbook">Signin</button>
+                    </form>
+                </div>
+                
+            </div>
+           
+        </div>
+        <div><p style="color:white">If You are a new user click  <a routerLink="/signup" style="text-decoration:none ;color:cadetblue">here</a></p></div>
+    </div>
+</body>
+</html>
