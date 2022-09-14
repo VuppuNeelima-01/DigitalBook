@@ -6,40 +6,44 @@
             <div class="card-body">
                 <h1 class="card-title text-center">Add Book</h1>
                 <div class="card-text">
-                    <form class="form-class">
-                        <div class="form-group">
+                    <form class="form-class" [formGroup]="createBook" (ngSubmit)="onSubmit()">
+                        <div class="form-group" >
+                            <label for="">Author Id</label>
+                            <input type="text" class="form-control form-control-sm" formControlName="authorId">
+                        </div>
+                        <div class="form-group" >
                             <label for="">Book Title</label>
-                            <input type="text" class="form-control form-control-sm">
+                            <input type="text" class="form-control form-control-sm" formControlName="bookTitle">
                         </div>
                         <div class="form-group">
                             <label for="">Book Category</label>
-                            <input type="text" class="form-control form-control-sm">
+                            <input type="text" class="form-control form-control-sm" formControlName="bookCategory">
                         </div>
                         <div class="form-group">
-                            <label for="">Price</label>
-                            <input type="number" class="form-control form-control-sm">
+                            <label for="">Book Price</label>
+                            <input type="number" class="form-control form-control-sm" formControlName="bookPrice">
                         </div>
                         <div class="form-group">
-                            <label for="">Author</label>
-                            <input type="text" class="form-control form-control-sm">
+                            <label for="">Book Author</label>
+                            <input type="text" class="form-control form-control-sm" formControlName="booAuthor">
                         </div>
                         <div class="form-group">
-                            <label for="">Publisher</label>
-                            <input type="text" class="form-control form-control-sm">
+                            <label for="">Book Publisher</label>
+                            <input type="text" class="form-control form-control-sm" formControlName="bookPublisher">
                         </div>
                         <div class="form-group">
-                            <label for="">Publish Date</label>
-                            <input type="date" class="form-control form-control-sm">
+                            <label for="">Book Publish Date</label>
+                            <input type="date" class="form-control form-control-sm" formControlName="publishDate"> 
                         </div>
                         <div class="form-group">
-                            <label for="">Image</label>
+                            <label for="">Book Image</label>
                             <input type="file" class="form-control form-control-sm">
                         </div>
                         <div class="form-group">
                             <label for="">Content</label>
                             <textarea class="form-control form-control-sm" cols="20" rows="5"></textarea>
                         </div>  
-                      <button type="submit" class="btn btn-primary btn-lg">Save</button>
+                      <button type="submit" class="btn btn-primary btn-lg">Save Book</button>
                     </form>
                 </div>
             </div>

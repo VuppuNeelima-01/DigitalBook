@@ -11,6 +11,16 @@ export class BookService {
   constructor(private http: HttpClient) { 
 
   }
+  save(user: any) {//authorId/{authorId}
+    return this.http.post<any>('http://localhost:8078/bookservice/authorId/5',{authorId:user.authorId,
+    title:user.bookTitle,
+    category:user.bookCategory,
+    price:user.bookPrice,
+    author:user.booAuthor,
+    publiaher:user.bookPublisher,
+    p_date:user.publishDate},)
+
+  }
 
   getUserInfo(user:any): Observable<any> {
     console.log('user values',user);

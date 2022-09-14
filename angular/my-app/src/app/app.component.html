@@ -1,13 +1,8 @@
 <div> 
   <nav class="navbar navbar-expand-md navbar-dark bg-black">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-         <!--- <li class="nav-item">
-            <img [src]="bookIcon" class="header-image">
-          </li>-->
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home" style="font-size: 25px;">Digital Book</a>
-            </li>
+        <ul class="navbar-nav mr-auto">    
+            <h1 class="card-title text-center">Digital Book</h1>
         </ul>
     </div>
     <div *ngIf="flag" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -21,9 +16,9 @@
             <li class="nav-item">
                 <a class="nav-link" style="font-size: 20px;" routerLink="/signup">Signup</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" style="font-size: 20px;" routerLink="/reader">ReadBook</a>
-          </li>
+          </li>-->
         </ul>
     </div>
     <div *ngIf="!flag" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
