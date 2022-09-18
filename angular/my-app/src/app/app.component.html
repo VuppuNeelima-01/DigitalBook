@@ -1,12 +1,13 @@
 <div> 
-  <nav class="navbar navbar-expand-md navbar-dark bg-black">
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">    
+  <nav class="navbar navbar-expand-md navbar-dark bg-white">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"  >
+        <ul class="navbar-nav mr-auto"  Display:flex:flex-direction:row>    
             <h1 class="card-title text-center">Digital Book</h1>
         </ul>
     </div>
-    <div *ngIf="flag" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav mx-auto">
+     <!----<div *ngIf="flag" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+
+      <ul class="navbar-nav mx-auto" style="display:flex; flex-direction:row">
             <li class="nav-item">
               <a class="nav-link" style="font-size: 20px;" routerLink="/home">Home</a>
            </li>
@@ -18,9 +19,24 @@
             </li>
             <!--<li class="nav-item">
               <a class="nav-link" style="font-size: 20px;" routerLink="/reader">ReadBook</a>
-          </li>-->
-        </ul>
-    </div>
+          </li> </ul> </div>-->
+
+
+          <div style="display :grid;grid-template-columns:auto auto" class="div-color">
+            <div style="display:flex;flex-direction:row; margin-right:auto;">
+            <a style="margin-left:20px" routerLink="/home"><h2>Home</h2></a>
+            <a style="margin-left:40px"  routerLink="/reader"><h2>Reader</h2></a>
+            </div>
+            <div style="display:flex;flex-direction:row; margin-left:auto;">
+                <a style ="margin-right:50px"  routerLink="/signup"><h2>SignUp</h2></a>
+                <a style ="margin-right:12px"  routerLink="/signin"><h2>SignIn</h2></a>
+                </div>
+
+            
+        </div>
+
+        
+    
     <div *ngIf="!flag" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav mx-auto">
           <li class="nav-item">

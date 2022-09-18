@@ -1,0 +1,29 @@
+<p>readersignup works!</p>
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <div  class="form">
+            <p class="error-messages">{{failureMessage}}</p>
+            <p class="success-messages">{{successMessage}}</p> 
+            <div *ngIf="readersignupContainerFlag">
+            <h6 ><strong>Register as a Reader to DigitalBooks</strong> </h6>
+            <div class="form-group"><input [(ngModel)]="reader.username" placeholder=" UserName" class="form-control" type="text" >
+                <p class="error-messages"> {{this.blankFields.username1}}
+                 {{this. readersignupuserNameExists}}</p>
+             </div>
+             <div class="form-group "><input [(ngModel)]="reader.email" class="form-control" type="email"  placeholder=" Email Id">
+                 <p class="error-messages">{{this.blankFields.email1}}
+                     {{this.readersignupEmailExists}}</p>
+             </div>
+             <div class="form-group "><input [(ngModel)]="reader.password" class="form-control" type="password"  placeholder=" Password">
+                 <p class="error-messages">{{this.blankFields.password}}</p>
+             </div>
+           
+            <div class="form-group">
+                <button (click)="registerReader()" class="btn btn-success button" type="submit">Sign Up</button>
+                
+            <a  routerLink="/login"> Already Registered? Login here.</a>
+            </div>
+        </div>
+    </div>
+</div>

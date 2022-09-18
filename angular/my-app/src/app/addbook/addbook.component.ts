@@ -9,11 +9,11 @@ import { FormGroup, FormControl } from '@angular/forms'
 export class AddbookComponent implements OnInit {
   book:any
   createBook= new FormGroup({
-    authorId:new FormControl(''),
+    //authorId:new FormControl(''),
     bookTitle:new FormControl(''),
     bookCategory: new FormControl(''),
     bookPrice: new FormControl(''),
-    booAuthor: new FormControl(''),
+    bookAuthor: new FormControl(''),
     bookPublisher: new FormControl(''),
     publishDate: new FormControl(''),
     
@@ -26,10 +26,10 @@ export class AddbookComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(){
-    //console.log("Book Created Successfully",this.  createBook.value);
-    //console.log( this.  createBook.value);
+    console.log("Book Created Successfully",this.  createBook.value);
+    console.log( this.  createBook.value);
     this.user.save(this.createBook.value).subscribe((data:any)=>{
-      console.log(data,"datavfrom ApI");
+      console.log(data,"datavalidationfrom ApI");
   });;
      }
 

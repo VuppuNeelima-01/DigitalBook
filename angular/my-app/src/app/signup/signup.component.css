@@ -2,7 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-    height: 100vh;
+    height: 130vh;
     background-color:white 
 }
 
@@ -25,6 +25,7 @@ color: orangered;
 }
 .login-form{
     width: 500px;
+    padding-bottom: 50px;
     height: 700px;
     margin: 20px;
     background-color: navy;

@@ -2,7 +2,7 @@ html,
 
     body{
         height: 120vh;
-       background-image: url('../../assets/images/alfons-morales-YLSwjSy7stw-unsplash.jpg');
+        background-color:white 
     }
 
 
@@ -11,7 +11,7 @@ html,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4b9eaf;
+    color: rgb(183, 200, 201);
 }
 
 .form-class{
@@ -24,7 +24,7 @@ html,
 .login-form{
     width: 600px;
     margin: 20px;
-    background: #e4de9f;
+    background-color: navy;
     border-radius: 10px !important;
 }
 .card-title{
@@ -39,4 +39,8 @@ html,
     margin-left: 100px;
     color: rgb(10, 10, 20);
    
+}
+
+.nav-item{
+    float: right;
 }

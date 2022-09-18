@@ -1,15 +1,13 @@
-.header-image{
-  background-repeat: no-repeat;
-background-position: center center;
-width: 70px;
-height: 57px;   
-margin: 0;
-padding: 0px;
-}
+
 .card-title{
   font-weight: 700;
   padding-top: 10px;
-  height: 60px;
+  height: 80px;
   font-size: 60px;
+  
   text-align: center;
+  background-color: darkblue;
+}
+.div-color{
+  background-color:cornflowerblue;
 }

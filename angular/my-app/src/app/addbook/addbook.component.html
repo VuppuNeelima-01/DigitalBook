@@ -7,11 +7,7 @@
                 <h1 class="card-title text-center">Add Book</h1>
                 <div class="card-text">
                     <form class="form-class" [formGroup]="createBook" (ngSubmit)="onSubmit()">
-                        <div class="form-group" >
-                            <label for="">Author Id</label>
-                            <input type="text" class="form-control form-control-sm" formControlName="authorId">
-                        </div>
-                        <div class="form-group" >
+                        <div class="form-group">
                             <label for="">Book Title</label>
                             <input type="text" class="form-control form-control-sm" formControlName="bookTitle">
                         </div>
@@ -25,7 +21,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Book Author</label>
-                            <input type="text" class="form-control form-control-sm" formControlName="booAuthor">
+                            <input type="text" class="form-control form-control-sm" formControlName="bookAuthor">
                         </div>
                         <div class="form-group">
                             <label for="">Book Publisher</label>
@@ -33,7 +29,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Book Publish Date</label>
-                            <input type="date" class="form-control form-control-sm" formControlName="publishDate"> 
+                            <input type="date" class="form-control form-control-sm" formControlName="publishDate">
                         </div>
                         <div class="form-group">
                             <label for="">Book Image</label>

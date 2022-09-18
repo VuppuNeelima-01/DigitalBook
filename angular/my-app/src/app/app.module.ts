@@ -12,6 +12,9 @@ import { HomeComponent } from './/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddbookComponent } from './/addbook/addbook.component';
 import { HttpClientModule } from '@angular/common/http';
+
+import { CommonModule } from '@angular/common';
+import { ReadersignupComponent } from './readersignup/readersignup.component';
 const routes:Routes=[
 
   {
@@ -25,23 +28,32 @@ const routes:Routes=[
   },
   {
     path:'addbook',component:AddbookComponent
+  },
+  {
+    path:'readersignup',component:ReadersignupComponent
   }
+  
 ]
 @NgModule({
   declarations: [
     AppComponent,
+    
   
     //ReaderComponent,
        SignupComponent,
        SigninComponent,
        HomeComponent,
-       AddbookComponent
+       AddbookComponent,
+       ReadersignupComponent,
+       CommonModule
+       
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule,RouterModule.forRoot(routes)
+    AppRoutingModule,RouterModule.forRoot(routes),
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
