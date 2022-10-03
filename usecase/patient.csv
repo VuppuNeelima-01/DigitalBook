@@ -1,0 +1,6 @@
+patientId,patientName,patientAddress,patientdob,patientemialId,contactNumber,patientDrugId,patientDrugName
+1,ravi,hyd,March,ravik@gmail.com,985674,456,abc
+2,rani,vsp,april,ranik@gmail.com,94826,457,abd
+3,raju,vsz,may,rajuk@gmail.com,9482679,458,abe
+4,raki,vsk,june,raki@gmail.com,9784545,459,abf
+5,rushi,sku,oct,rushi@gmail.com,678965,460,abg
